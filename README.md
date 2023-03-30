@@ -3,8 +3,7 @@
 ## This project list all SSM parameters in AWS and their contents.
 
 ### Dependencies:
-1- AWS CLI
-2- Docker
+Docker
 
 ### Clone repo, change directory to project, build image as "ssmimage" in current directory and run with credentials and region on port 80.
 
