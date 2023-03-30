@@ -7,7 +7,8 @@ This project list all SSM parameters and their contents in AWS.
 - **Cloning repo**
 
 1. Clone repo.
-2. Build image as **_ssmimage_** in current directory and run on port 80.
+2. Build image as **_ssmimage_** in current directory.
+3. Mount the aws credentials folder as a volume with **_-v_** and run on port 80.
 
 ``` bash
 git clone https://github.com/deniz-icin/aws-ssm-lister.git
