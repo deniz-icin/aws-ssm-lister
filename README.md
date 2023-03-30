@@ -31,4 +31,3 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 docker pull hariboidevops/ssmimage:latest
 docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 ```
-
