@@ -10,6 +10,7 @@ This project list all SSM parameters and their contents in AWS.
 2. Build image as **_ssmimage_** in current directory and run on port 80.
 
 ``` bash
+git clone https://github.com/deniz-icin/aws-ssm-lister.git
 docker build -t ssmimage .
 docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 ssmimage
 ```
