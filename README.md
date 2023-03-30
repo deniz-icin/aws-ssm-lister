@@ -2,7 +2,7 @@
 
 This project list all SSM parameters and their contents in AWS.
 
-## Dependencies:
+## Dependencies
 [Docker](https://docs.docker.com/get-docker/)
 
 ### How to use?
@@ -11,7 +11,7 @@ This project list all SSM parameters and their contents in AWS.
 
 1. Clone repo.
 2. Change directory to project directory.
-3. Build image as **_ssmimage_** in current directory and run with credentials and region on port 80.
+3. Build image as **_ssmimage_** in current directory and run on port 80.
 
 ``` bash
 docker build -t ssmimage .
