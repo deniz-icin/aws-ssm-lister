@@ -26,3 +26,7 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 ssmimage
 docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 ```
 > `docker run` command will automatically pull image from Dockerhub.
+
+> :warning: If you want to list all parameters, go to *http://0.0.0.0:80/parameters*
+
+> :warning: For parameter details, go to *http://0.0.0.0:80/parameter/$PARATEMER_NAME*
