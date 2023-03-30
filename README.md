@@ -29,4 +29,8 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 
 > :warning: If you want to list all parameters, go to *http://0.0.0.0:80/parameters*
 
+![Parameter-screenshot](assets/parameters.png)
+
 > :warning: For parameter details, go to *http://0.0.0.0:80/parameter/$PARATEMER_NAME*
+
+![Content-screenshot](assets/contents.png)
