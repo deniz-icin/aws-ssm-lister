@@ -1,6 +1,6 @@
 # aws-ssm-lister
 
-## This project list all SSM parameters in AWS and their contents.
+## This project list all SSM parameters and their contents in AWS.
 
 ### Dependencies:
 Docker
