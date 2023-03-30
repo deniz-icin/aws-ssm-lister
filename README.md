@@ -12,3 +12,11 @@
 docker build -t ssmimage .
 docker run -e AWS_ACCESS_KEY_ID="YOUR_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_ACCESS_KEY" -e AWS_DEFAULT_REGION=YOUR_REGION -p 80:80 ssmimage
 ```
+
+
+## Pull from Dockerhub
+
+``` bash
+docker pull hariboidevops/ssmimage:latest
+docker run -e AWS_ACCESS_KEY_ID="YOUR_KEY_ID" -e AWS_SECRET_ACCESS_KEY="YOUR_ACCESS_KEY" -e AWS_DEFAULT_REGION=YOUR_REGION -p 80:80 hariboidevops/ssmimage:latest
+```
