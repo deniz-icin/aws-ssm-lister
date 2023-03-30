@@ -16,12 +16,11 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 ssmimage
 
 -----------------------------------------------------------------------------------------------------
 
-- **Pull from Dockerhub**
+- **Use image from Dockerhub**
 
-1. Pull ssmimage.
-2. Run image as **_hariboidevops/ssmimage:latest_** in current directory.
+1. Run image as **_hariboidevops/ssmimage:latest_** in current directory.
+> `docker run` command will automatically pull image from Dockerhub.
 
 ``` bash
-docker pull hariboidevops/ssmimage:latest
 docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 ```
