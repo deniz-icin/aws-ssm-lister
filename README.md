@@ -1,6 +1,6 @@
 # aws-ssm-lister
 
-This project list all SSM parameters and their contents in AWS.
+This project lists all SSM parameters and their contents in AWS.
 
 ### How to use?
 
@@ -31,6 +31,6 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 
 ![Parameter-screenshot](assets/parameters.png)
 
-> :warning: For parameter details, go to *http://0.0.0.0:80/parameter/$PARATEMER_NAME*
+> :warning: For parameter details, go to *http://0.0.0.0:80/parameters/$PARATEMER_NAME*
 
 ![Content-screenshot](assets/contents.png)
