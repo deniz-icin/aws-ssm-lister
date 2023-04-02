@@ -8,21 +8,13 @@ args = parser.parse_args()
 def main():
     parameter_name = args.parameter
     parameters = list_parameters()
-    if not parameter_name:
-        result = [
-            'Parameters: {:^30s}'.format(parameter.get('Name'))
-            for parameter in parameters
-         ]
-        return ('\n'.join(result))
+    parameter_names = [p.get('Name') for p in parameters]
+    parameter_exist = parameter_name in parameter_names 
+
+    if parameter_exist:
+        print(list_contents_of_parameter(parameter_name))
     else:
-        parameter_names = [p.get('Name') for p in parameters]
-        parameter_exist = parameter_name in parameter_names
-        
-        if parameter_exist:
-            list_contents_of_parameter(parameter_name)
-        else:
-            print(f"The parameter {parameter_name} does not exist.")
-            return
+        print(f"The parameter {parameter_name} does not exist.")
 
 if __name__ == "__main__":
     main()

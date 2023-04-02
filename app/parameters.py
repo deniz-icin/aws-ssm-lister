@@ -13,9 +13,13 @@ def list_parameters():
     success = is_response_successful(response)
     if success is False: print("Connection failed.")
     parameters = response.get('Parameters',[])
+    return parameters
+
+def print_parameters():
+    parameter_data = list_parameters()
     result = [
             "ParameterName: {:^30s} | Type: {:<25s}".format(parameter.get('Name'), parameter.get('Type'))
-            for parameter in parameters
+            for parameter in parameter_data
         ]
     return ('\n'.join(result))
 
