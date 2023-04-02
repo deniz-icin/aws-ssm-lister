@@ -34,3 +34,10 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 > :warning: For parameter details, go to *http://0.0.0.0:80/parameters/$PARATEMER_NAME*
 
 ![Content-screenshot](assets/contents.png)
+
+--------------------------
+
+This project also include argparse module using python. It provides easy and user-friendly command-line interface.\n
+Run `python3 cli.py --parameter $PARAMETER_NAME` command and it will return details for given parameter.
+
+![Argparser-screenshot](assets/argparser.png)
