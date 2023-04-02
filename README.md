@@ -37,7 +37,7 @@ docker run --rm -ti -v ~/.aws:/root/.aws -p 80:80 hariboidevops/ssmimage:latest
 
 --------------------------
 
-This project also include argparse module using python. It provides easy and user-friendly command-line interface.\n
-Run `python3 cli.py --parameter $PARAMETER_NAME` command and it will return details for given parameter.
+This project also include argparse module using python. It provides easy and user-friendly command-line interface.<br />
+Run `python3 cli.py --parameter $PARAMETER_NAME`. It returns the details for the given parameter.
 
 ![Argparser-screenshot](assets/argparser.png)
